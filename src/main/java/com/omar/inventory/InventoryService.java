@@ -16,7 +16,8 @@ public class InventoryService {
         validateName(name);
         validateQuantity(quantity);
         if (repo.findBySku(sku).isPresent()) {
-            throw new IllegalArgumentException("Item with sku already exists: " + sku);
+            throw new 
+                IllegalArgumentException("Item with sku already exists: " + sku);
         }
         repo.save(new Item(sku, name, quantity));
     }
@@ -47,14 +48,17 @@ public class InventoryService {
     }
 
     private static void validateSku(String sku) {
-        if (sku == null || sku.isBlank()) throw new IllegalArgumentException("sku must not be blank");
+        if (sku == null || sku.isBlank())
+            throw new IllegalArgumentException("sku must not be blank");
     }
 
     private static void validateName(String name) {
-        if (name == null || name.isBlank()) throw new IllegalArgumentException("name must not be blank");
+        if (name == null || name.isBlank()) 
+            throw new IllegalArgumentException("name must not be blank");
     }
 
     private static void validateQuantity(int qty) {
-        if (qty < 0) throw new IllegalArgumentException("quantity must be >= 0");
+        if (qty < 0) 
+            throw new IllegalArgumentException("quantity must be >= 0");
     }
 }
