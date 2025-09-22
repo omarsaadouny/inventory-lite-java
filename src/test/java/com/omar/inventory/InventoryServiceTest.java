@@ -1,8 +1,8 @@
 package com.omar.inventory;
 
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
+
 
 class InventoryServiceTest {
 
@@ -45,4 +45,11 @@ class InventoryServiceTest {
         assertThrows(IllegalArgumentException.class, () -> svc.addItem("A", "", 1));
         assertThrows(IllegalArgumentException.class, () -> svc.addItem("A", "B", -1));
     }
+
+    @Test
+    void delete_nonexistent_item_throws() {
+    InventoryService svc = new InventoryService(new InMemoryInventoryRepository());
+    assertThrows(IllegalArgumentException.class, () -> svc.removeItem("NOPE"));
+    }
+
 }
