@@ -8,17 +8,27 @@ public final class Item {
     private int quantity;
 
     public Item(String sku, String name, int quantity) {
-        if (sku == null || sku.isBlank()) throw new IllegalArgumentException("sku must not be blank");
-        if (name == null || name.isBlank()) throw new IllegalArgumentException("name must not be blank");
-        if (quantity < 0) throw new IllegalArgumentException("quantity must be >= 0");
+        if (sku == null || sku.isBlank()) 
+            throw new 
+                IllegalArgumentException("Sku must not be blank");
+        if (name == null || name.isBlank()) 
+            throw new IllegalArgumentException("Name must not be blank");
+        if (quantity < 0) 
+            throw new IllegalArgumentException("Quantity must be >= 0");
         this.sku = sku;
         this.name = name;
         this.quantity = quantity;
     }
 
-    public String getSku() { return sku; }
-    public String getName() { return name; }
-    public int getQuantity() { return quantity; }
+    public String getSku() { 
+        return sku; 
+    }
+    public String getName() { 
+        return name; 
+    }
+    public int getQuantity() { 
+        return quantity; 
+    }
     public void setQuantity(int quantity) {
         if (quantity < 0) throw new IllegalArgumentException("quantity must be >= 0");
         this.quantity = quantity;
