@@ -1,6 +1,7 @@
 # Inventory Lite (Java)
 
-Kleines Beispielprojekt in **Java 17** mit **JUnit-Tests**. Ziel: saubere Struktur, einfache Fachlogik und testgetriebene Entwicklung im Mini-Format.
+Kleines Beispielprojekt in **Java 17**  von **Omar Elsaadouny**. Ziel: saubere Struktur, einfache Fachlogik
+und Unit-Tests mit JUnit 5. Erstellt als kompaktes Beispiel für Bewerbungen.
 
 ## Features
 - Artikel (`Item`) mit `sku`, `name`, `quantity`
@@ -32,6 +33,11 @@ mvn test
 ```
 
 ## Warum dieses Beispiel?
-- Zeigt **sauberen Code**, **Input-Validierung** und **Unit-Tests**
-- Verständliche README, klare Ordnerstruktur, kleiner Scope
+- Zeigt grundlegende Java-OOP (Model, Service, Repository)
+- Enthält Unit-Tests (JUnit 5) und eine kurze, verständliche README
 - Leicht erweiterbar: z. B. persistentes Repository (MySQL), REST-API etc.
+
+
+---
+© 2025 Omar Elsaadouny – MIT License
+
