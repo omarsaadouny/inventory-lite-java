@@ -9,8 +9,7 @@ public final class Item {
 
     public Item(String sku, String name, int quantity) {
         if (sku == null || sku.isBlank()) 
-            throw new 
-                IllegalArgumentException("Sku must not be blank");
+            throw new IllegalArgumentException("Sku must not be blank");
         if (name == null || name.isBlank()) 
             throw new IllegalArgumentException("Name must not be blank");
         if (quantity < 0) 
@@ -30,7 +29,8 @@ public final class Item {
         return quantity; 
     }
     public void setQuantity(int quantity) {
-        if (quantity < 0) throw new IllegalArgumentException("quantity must be >= 0");
+        if (quantity < 0) 
+            throw new IllegalArgumentException("quantity must be >= 0");
         this.quantity = quantity;
     }
 
