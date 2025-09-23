@@ -1,7 +1,8 @@
 # Inventory Lite (Java)
 
-Kleines Beispielprojekt in **Java 17**  von **Omar Elsaadouny**. Ziel: saubere Struktur, einfache Fachlogik
-und Unit-Tests mit JUnit 5. Erstellt als kompaktes Beispiel für Bewerbungen.
+Von: Omar Elsaadouny
+
+Einen kleinen Inventardienst in Java, um eine übersichtliche Struktur und grundlegende Tests zu demonstrieren. Er umfasst ein Item-Modell, einen Dienst mit Eingabevalidierung und eine Repository-Schnittstelle mit einer In-Memory-Implementierung. Die JUnit-Tests decken das Hinzufügen, Aktualisieren, Suchen, Entfernen und ungültige Eingaben ab. Die Idee war, ihn klein, korrekt und leicht auf eine Datenbank oder REST-API erweiterbar zu halten. Ziel: saubere Struktur, einfache Fachlogik und Unit-Tests mit JUnit 5. Erstellt als kompaktes Beispiel für Bewerbungen.
 
 ## Features
 - Artikel (`Item`) mit `sku`, `name`, `quantity`
