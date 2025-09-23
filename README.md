@@ -10,6 +10,12 @@ Einen kleinen Inventardienst in Java, um eine übersichtliche Struktur und grund
 - In-Memory-Repository (austauschbar)
 - **Unit-Tests** mit JUnit 5
 
+
+## Warum dieses Beispiel?
+- Zeigt grundlegende Java-OOP (Model, Service, Repository)
+- Enthält Unit-Tests (JUnit 5) und eine kurze, verständliche README
+- Leicht erweiterbar: z. B. persistentes Repository (MySQL), REST-API etc.
+
 ## Projektstruktur
 ```
 inventory-lite-java/
@@ -32,12 +38,6 @@ Voraussetzung: Java 17 und Maven.
 mvn -v
 mvn test
 ```
-
-## Warum dieses Beispiel?
-- Zeigt grundlegende Java-OOP (Model, Service, Repository)
-- Enthält Unit-Tests (JUnit 5) und eine kurze, verständliche README
-- Leicht erweiterbar: z. B. persistentes Repository (MySQL), REST-API etc.
-
 
 ---
 © 2025 Omar Elsaadouny – MIT License
